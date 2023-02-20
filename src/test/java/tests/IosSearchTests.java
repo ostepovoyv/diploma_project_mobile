@@ -17,7 +17,7 @@ public class IosSearchTests extends TestBase {
 
     @Test
     @Tag("ios")
-    @DisplayName("Проверка поиска")
+    @DisplayName("Проверка поиска (iOS)")
     void checkTextTest() {
         iosPage
                 .clickTextButton()

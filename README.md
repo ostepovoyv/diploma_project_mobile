@@ -27,6 +27,15 @@
 <a href="https://web.telegram.org/"><img src="media/logo/Telegram.svg" width="50" height="50" alt="Telegram" title="Telegram"></a>
 </p>
 
+## :heavy_check_mark: Тест кейсы
+
+- Поиск страницы BrowserStack
+- Поиск страницы Microsoft, проверка на странице
+- Прохождение онбординга
+- Поиск по одной букве А
+- Скрытие карточки на главной странице
+- Проверка поиска (iOS)
+
 # Запуск тестов
 Для запуска тестов android:
 ```shell
