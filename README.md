@@ -43,7 +43,7 @@ gradle clean ios -Denv=ios
 gradle clean android -Denv=local  
 ```
 
-## <img width="4%" title="Jenkins" src="media/logo/Jenkins.svg"> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/qa_lesson_21_agros/)
+## <img width="4%" title="Jenkins" src="media/logo/Jenkins.svg"> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/diploma_project_mobile/)
 
 Сборка проекта.
 
@@ -51,7 +51,7 @@ gradle clean android -Denv=local
   <img src="media/screen/main_jenkins.png" alt="Jenkins" width="800">
 </p>
 
-## <img width="4%" title="Allure Report" src="media/logo/Allure_Report.svg"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/qa_lesson_21_agros/33/allure/#)
+## <img width="4%" title="Allure Report" src="media/logo/Allure_Report.svg"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/diploma_project_mobile/1/allure/)
 
 <p align="center">
   <img src="media/screen/allure_1.png" alt="allure-report_1" width="900">
@@ -61,25 +61,24 @@ gradle clean android -Denv=local
   <img src="media/screen/allure_2.png" alt="allure-report_2" width="900">
 </p>
 
-## <img width="4%" title="Allure TestOPS" src="media/logo/Allure_TO.svg"> Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/)
+## <img width="4%" title="Allure TestOPS" src="media/logo/Allure_TO.svg"> Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/19365/)
 
-### Основной дашборд
+
 
 <p align="center">
-  <img src="media/screen/dashboards.png" alt="dashboard" width="900">
+  <img src="media/screen/Allure_TO1.png" alt="Allure_TO" width="900">
 </p>
 
-### Список тестов с результатами
 
 <p align="center">
-  <img src="media/screen/allure-testops-results.png" alt="dashboard" width="900">
+  <img src="media/screen/Allure_TO2.png" alt="Allure_TO" width="900">
 </p>
 
 ## <img width="4%" title="Telegram" src="media/logo/Telegram.svg"> Уведомления в Telegram
 После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прохождении тестов.
 
 <p align="center">
-<img title="Telegram Notifications" src="media/screen/Telegram.png">
+<img title="Telegram Notifications" src="media/screen/telegram_notify.png">
 
 ## <img width="4%" title="Browserstack" src="media/logo/Browserstack.svg"> Пример запуска теста в Browserstack
 
