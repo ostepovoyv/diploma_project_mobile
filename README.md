@@ -97,4 +97,4 @@ gradle clean android -Denv=local
   <img title="Browserstack Video" src="media/video/mobile_test_video.gif">
 </p>
 
-[Вернуться к началу ⬆](Содержание)
+[Вернуться к началу ⬆](#Содержание)
