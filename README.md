@@ -76,15 +76,19 @@ gradle clean android -Denv=local
 
 ## <img width="4%" title="Allure TestOPS" src="media/logo/Allure_TO.svg"> Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/19365/)
 
-
-
+### Основной дашборд
 <p align="center">
-  <img src="media/screen/Allure_TO1.png" alt="Allure_TO" width="900">
+  <img src="media/screen/Allure_TO1.png" alt="Allure_TO1" width="900">
 </p>
 
-
+### Список тестов с результатами
 <p align="center">
-  <img src="media/screen/Allure_TO2.png" alt="Allure_TO" width="900">
+  <img src="media/screen/Allure_TO2.png" alt="Allure_TO2" width="900">
+</p>
+
+### Test plans
+<p align="center">
+  <img src="media/screen/Allure_TO3.png" alt="Allure_TO3" width="900">
 </p>
 
 ## <img width="4%" title="Telegram" src="media/logo/Telegram.svg"> Уведомления в Telegram
