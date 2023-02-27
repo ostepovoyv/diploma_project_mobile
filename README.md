@@ -1,4 +1,4 @@
-# <img width="5%" title="Wikipedia" src="media/logo/Wikipedia.svg"> Дипломный проект по тестирования мобильного приложения [Wikipedia](https://github.com/wikimedia/apps-android-wikipedia/)
+# <img width="5%" title="Wikipedia" name="Wikipedia" src="media/logo/Wikipedia.svg"> Дипломный проект по тестирования мобильного приложения [Wikipedia](https://github.com/wikimedia/apps-android-wikipedia/)
 
 ## :open_book: Содержание:
 
@@ -96,3 +96,5 @@ gradle clean android -Denv=local
 <p align="center">
   <img title="Browserstack Video" src="media/video/mobile_test_video.gif">
 </p>
+
+[Вернуться к началу ⬆](#Wikipedia)
