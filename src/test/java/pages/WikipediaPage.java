@@ -68,25 +68,25 @@ public class WikipediaPage {
     }
 
     @Step("Открываем настройки статьи")
-    public WikipediaPage openArticleSettings(){
+    public WikipediaPage openArticleSettings() {
         cardHeaderMenu.click();
         return this;
     }
 
     @Step("Скрываем статью")
-    public WikipediaPage selectHideInMenu(String value){
+    public WikipediaPage selectHideInMenu(String value) {
         title.shouldHave(exactText(value)).click();
         return this;
     }
 
     @Step("Получаем название статью, которую будем закрывать")
-    public WikipediaPage getCurrentTitleArticle(){
+    public WikipediaPage getCurrentTitleArticle() {
         hiddenArticleTitle = cardHeaderTitle.getText();
         return this;
     }
 
     @Step("Проверяем, что выбранная статья скрыта")
-    public WikipediaPage checkHiddenArticle(){
+    public WikipediaPage checkHiddenArticle() {
         cardHeaderTitle.shouldNot(text(hiddenArticleTitle));
         return this;
     }

@@ -8,6 +8,8 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.IosPage;
 
+import static io.qameta.allure.Allure.step;
+
 @Epic("iOS")
 @Feature("Search")
 @Owner("ostepovoyv")
@@ -19,11 +21,13 @@ public class IosSearchTests extends TestBase {
     @Tag("ios")
     @DisplayName("Проверка поиска (iOS)")
     void checkTextTest() {
-        iosPage
-                .clickTextButton()
-                .checkOutputText("Waiting for text input.")
-                .setValueInTextInput("Selenium")
-                .checkOutputText("Selenium");
+        step("Тестируем поиск", () -> {
+            iosPage
+                    .clickTextButton()
+                    .checkOutputText("Waiting for text input.")
+                    .setValueInTextInput("Selenium")
+                    .checkOutputText("Selenium");
+        });
     }
 
 }

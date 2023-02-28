@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.OnboardingScreenPage;
 import pages.WikipediaPage;
+
 import static io.qameta.allure.Allure.step;
 
 @Epic("Android")
@@ -33,11 +34,13 @@ public class AndroidTests extends TestBase {
     @Tag("android")
     @DisplayName("Поиск страницы Microsoft, проверка на странице")
     void checkDescriptionTest() {
-        wikipediaPage
-                .goBack()
-                .searchArticle("Microsoft")
-                .checkSearchResult("American multinational technology corporation")
-                .checkTextOnArticlePage();
+        step("Тестируем страницу Microsoft", () -> {
+            wikipediaPage
+                    .goBack()
+                    .searchArticle("Microsoft")
+                    .checkSearchResult("American multinational technology corporation")
+                    .checkTextOnArticlePage();
+        });
     }
 
     @Test
@@ -77,10 +80,12 @@ public class AndroidTests extends TestBase {
     @Tag("android")
     @DisplayName("Поиск по одной букве А")
     void LetterSearch() {
-        wikipediaPage
-                .goBack()
-                .searchArticle("A")
-                .checkSearchResult("First letter of the Latin alphabet");
+        step("Тестируем поиск по одной букве", () -> {
+            wikipediaPage
+                    .goBack()
+                    .searchArticle("A")
+                    .checkSearchResult("First letter of the Latin alphabet");
+        });
     }
 
     @Test
@@ -88,12 +93,14 @@ public class AndroidTests extends TestBase {
     @Tag("android")
     @DisplayName("Скрытие карточки на главной странице")
     void hideThisCard() {
-        wikipediaPage
-                .goBack()
-                .getCurrentTitleArticle()
-                .openArticleSettings()
-                .selectHideInMenu("Hide this card")
-                .checkHiddenArticle();
+        step("Тестируем скрытие карточки на главной странице", () -> {
+            wikipediaPage
+                    .goBack()
+                    .getCurrentTitleArticle()
+                    .openArticleSettings()
+                    .selectHideInMenu("Hide this card")
+                    .checkHiddenArticle();
+        });
     }
 
 }
